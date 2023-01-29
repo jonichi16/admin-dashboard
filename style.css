@@ -113,7 +113,7 @@ img,
 }
 
 .secondary-nav {
-  grid-area: 9 / 1 / 12 / 3;
+  grid-area: 9 / 1 / 11 / 3;
 }
 
 .logo {
@@ -287,7 +287,6 @@ input:focus {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 2em;
-  /* grid-auto-rows: 18em; */
   gap: 1.5em;
 }
 
