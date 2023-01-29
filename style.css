@@ -7,8 +7,8 @@
 
   --color-dark-900: #111827;
   --color-dark-600: #4b5563;
-  --color-light-100: #f3f4f6;
-  --color-light-300: #d1d5db;
+  --color-light-100: #ffffff;
+  --color-light-300: #e2e8f0;
 }
 
 /* Box sizing rules */
@@ -80,24 +80,16 @@ select {
   }
 }
 
-/* Please remove below later */
-
-.icon {
-  max-width: 24px;
-  min-width: 24px;
-}
-
-/* Please remove above later */
-
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 5fr;
-  grid-template-rows: 1fr 7fr;
+  grid-template-rows: 1fr 5fr;
   font-family: var(--font-primary);
 }
 
 img,
-.small-name {
+.small-name,
+.card {
   cursor: pointer;
 }
 
@@ -127,9 +119,13 @@ img,
   filter: invert();
 }
 
-.nav-icon {
+.nav-icon,
+.icon {
   max-width: 24px;
   min-width: 24px;
+}
+
+.nav-icon {
   filter: invert();
   justify-self: center;
 }
@@ -163,6 +159,7 @@ img,
   gap: 1.5em;
   padding-top: 1.5em;
   box-shadow: 0 3px 8px #11182769;
+  z-index: 1;
 }
 
 .container {
@@ -269,6 +266,59 @@ input:focus {
   background-color: var(--color-primary-700);
 }
 
-.button:active {
-  transform: scale(1.1);
+.button:active,
+.card .icon:active {
+  transform: scale(0.9);
+}
+
+/* Main section style */
+/* Project section */
+.main {
+  background-color: var(--color-light-300);
+  padding: 1.5em 2.5%;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 1.25em;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2em;
+  grid-auto-rows: 18em;
+  gap: 1.5em;
+}
+
+.projects-label {
+  grid-column: 1 / span 2;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: 2.5em 1fr 1.5em;
+  align-content: start;
+  background-color: var(--color-light-100);
+  padding: 2.5em 1.75rem;
+  border-left: 10px solid var(--color-accent-600);
+  border-radius: 10px;
+}
+
+.card-button {
+  display: flex;
+  justify-self: end;
+  gap: 1em;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: var(--color-dark-900);
+}
+
+.card-description {
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--color-dark-600);
 }
