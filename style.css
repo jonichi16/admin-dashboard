@@ -79,3 +79,76 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+/* Please remove below later */
+img {
+  width: 100px;
+}
+
+.icon {
+  max-width: 24px;
+  min-width: 24px;
+}
+
+/* Please remove above later */
+
+/* Sidebar styles */
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 5fr;
+  gap: 1em;
+  font-family: var(--font-primary);
+}
+
+.nav {
+  grid-row: 1 / 3;
+  background-color: var(--color-primary-800);
+}
+
+.sidebar {
+  display: grid;
+  grid-template-columns: 2.5em 1fr;
+  gap: 1em;
+  padding: 1.5em;
+}
+
+.primary-nav {
+  grid-area: 2 / 1 / 4 / 3;
+}
+
+.secondary-nav {
+  grid-area: 9 / 1 / 12 / 3;
+}
+
+.logo {
+  width: 2.5em;
+  filter: invert();
+}
+
+.nav-icon {
+  max-width: 24px;
+  min-width: 24px;
+  filter: invert();
+  justify-self: center;
+}
+
+.label-logo,
+.label {
+  font-weight: 700;
+  justify-self: start;
+  align-self: center;
+}
+
+.label-logo {
+  font-size: 1.5rem;
+}
+
+.label {
+  font-size: 1rem;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: var(--color-light-100);
+}
