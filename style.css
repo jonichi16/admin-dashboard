@@ -1,3 +1,16 @@
+:root {
+  --font-primary: 'Roboto Condensed', sans-serif;
+
+  --color-primary-800: #075985;
+  --color-primary-700: #0369a1;
+  --color-accent-600: #854e07;
+
+  --color-dark-900: #111827;
+  --color-dark-600: #4b5563;
+  --color-light-100: #f3f4f6;
+  --color-light-300: #d1d5db;
+}
+
 /* Box sizing rules */
 *,
 *::before,
